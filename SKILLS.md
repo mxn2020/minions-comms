@@ -1,6 +1,12 @@
 ---
 name: minions-comms
-description: Messages, threads, and notifications across all communication channels
+id: OC-0112
+version: 1.0.0
+description: "Messages, threads, and notifications across all communication channels"
+category: productivity
+subcategory: communication
+tags: ["minion", "productivity", "communication"]
+comments:
 ---
 
 # minions-comms — Agent Skills
