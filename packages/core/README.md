@@ -1,3 +1,5 @@
+![CI](https://github.com/mxn2020/@minions-comms/sdk/actions/workflows/ci.yml/badge.svg) ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 # @minions-comms/sdk
 
 Messages, threads, and notifications across all communication channels

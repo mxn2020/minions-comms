@@ -1,28 +1,40 @@
 {
-    "name": "minions-comms-workspace",
-    "private": true,
-    "version": "0.1.0",
-    "description": "Messages, threads, and notifications across all communication channels",
-    "type": "module",
-    "license": "MIT",
-    "author": "Mehdi Nabhani <mehdi@the-mehdi.com> (https://the-mehdi.com)",
-    "workspaces": [
-        "packages/*",
-        "apps/*"
-    ],
-    "scripts": {
-        "build": "pnpm --filter @minions-comms/sdk run build && pnpm --filter @minions-comms/cli run build && pnpm --filter minions-comms-docs run build && pnpm --filter minions-comms-blog run build && pnpm --filter minions-comms-web run build",
-        "deploy:blog": "pnpm --filter minions-comms-blog run build && netlify deploy --dir apps/blog/dist --prod",
-        "deploy:docs": "pnpm --filter minions-comms-docs run build && netlify deploy --dir apps/docs/dist --prod",
-        "deploy:web": "pnpm --filter minions-comms-web run build && netlify deploy --dir apps/web/dist --prod",
-        "test": "pnpm --filter @minions-comms/sdk run test",
-        "lint": "pnpm --filter @minions-comms/sdk run build && pnpm --filter @minions-comms/sdk run lint && pnpm --filter @minions-comms/cli run lint",
-        "deploy": "pnpm run deploy:blog"
-    },
-    "engines": {
-        "node": ">=20"
-    },
-    "devDependencies": {
-        "typescript": "^5.9.3"
-    }
+  "name": "minions-comms-workspace",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Messages, threads, and notifications across all communication channels",
+  "type": "module",
+  "license": "MIT",
+  "author": "Mehdi Nabhani <mehdi@the-mehdi.com> (https://the-mehdi.com)",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "pnpm --filter @minions-comms/sdk run build && pnpm --filter @minions-comms/cli run build && pnpm --filter minions-comms-docs run build && pnpm --filter minions-comms-blog run build && pnpm --filter minions-comms-web run build",
+    "deploy:blog": "pnpm --filter minions-comms-blog run build && netlify deploy --dir apps/blog/dist --prod",
+    "deploy:docs": "pnpm --filter minions-comms-docs run build && netlify deploy --dir apps/docs/dist --prod",
+    "deploy:web": "pnpm --filter minions-comms-web run build && netlify deploy --dir apps/web/dist --prod",
+    "test": "pnpm --filter @minions-comms/sdk run test",
+    "lint": "pnpm --filter @minions-comms/sdk run build && pnpm --filter @minions-comms/sdk run lint && pnpm --filter @minions-comms/cli run lint",
+    "deploy": "pnpm run deploy:blog",
+    "dev": "echo 'no dev'",
+    "stop": "pkill -f 'node.*minions-comms' || true"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mxn2020/minions"
+  },
+  "keywords": [
+    "minions",
+    "ecosystem",
+    "compliance"
+  ]
 }

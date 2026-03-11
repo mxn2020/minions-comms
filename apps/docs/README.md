@@ -1,0 +1,1 @@
+# minions-comms-docs\n\nStandard compliance definition for minions-comms-docs\n\n![CI](https://github.com/mxn2020/minions-comms-docs/actions/workflows/ci.yml/badge.svg) ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)\n
