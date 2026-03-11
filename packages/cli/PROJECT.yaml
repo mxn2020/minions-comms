@@ -6,3 +6,4 @@ description: "CLI for minions-comms — Messages, threads, and notifications acr
 priority: high
 deploy_url: null
 tags: null
+category: minion-toolbox
