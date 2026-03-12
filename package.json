@@ -1,7 +1,7 @@
 {
   "name": "minions-comms-workspace",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Messages, threads, and notifications across all communication channels",
   "type": "module",
   "license": "MIT",
